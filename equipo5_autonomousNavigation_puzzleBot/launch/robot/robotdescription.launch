@@ -1,0 +1,7 @@
+<!-- Load robot_description to ros parameter server and create TF tree from xacro/urdf file -->
+<launch>
+    <arg name="config" default="base" />
+    <param name="robot_description" command="$(find xacro)/xacro '$(find equipo5_autonomousNavigation_puzzleBot)/urdf/robot.urdf'"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" 
+        respawn="false" output="screen"/>
+</launch>
