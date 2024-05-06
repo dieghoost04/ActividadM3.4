@@ -1,0 +1,21 @@
+<!-- Main launch file for simulation with 2D LiDAR -->
+<launch>
+    
+    <!-- To use the same name as that of the 3D LiDAR -->
+    <!-- Remap must be used here since it is position-dependent (scope affected), 
+    this means that everything that is declared beneath it will consider 
+    this new name, but everything above it won't 
+    Reference: http://wiki.ros.org/roslaunch/XML/remap
+    Point 4 - Important Notes-->
+    <remap from="/front/scan" to="/scan"/>
+
+    <!-- Launching gazebo maze simulation -->
+    <include file="$(find equipo5_autonomousNavigation_puzzleBot)/launch/gazebo.launch"/> 
+
+    <!-- Launch robot spawning -->
+    <include file="$(find equipo5_autonomousNavigation_puzzleBot)/launch/robot/spawner.launch"/> 
+
+    <!-- Launching Rviz with navigation visualization -->
+    <include file="$(find equipo5_autonomousNavigation_puzzleBot)/launch/rviz/navigation.launch"/> 
+
+</launch> 
