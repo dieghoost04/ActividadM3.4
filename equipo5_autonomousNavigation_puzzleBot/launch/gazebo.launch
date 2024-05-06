@@ -1,0 +1,4 @@
+<launch>
+    <arg name="world_file" default="$(find equipo5_autonomousNavigation_puzzleBot)/worlds/ADJIC_map.world"/>
+    <node name="gazebo" pkg="gazebo_ros" type="gazebo" args="$(arg world_file)" respawn="false" output="screen"/>
+</launch>
