@@ -2,10 +2,11 @@
 
 Este proyecto es una colaboración entre los siguientes estudiantes de la Universidad:
 
-- **Salvador Santana Blanco** (A01703523)
-- **Anatanael Jesus Miranda Faustino** (A01769232)
-- **Diego Díaz Ayala** (A01770236)
-- **Carlos Eduardo Ortega** (A01707480)
+- **Salvador Santana Blanco**      (Matrícula: A01703523)
+- **Anatanael Jesus Miranda Faustino**  (Matrícula: A01769232)
+- **Diego Díaz Ayala**              (Matrícula: A01770236)
+- **Carlos Eduardo Ortega**         (Matrícula: A01707480)
+
 
 *Profesor: Juan Manuel Ledesma Rangel*
 
